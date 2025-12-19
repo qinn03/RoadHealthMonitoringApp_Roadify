@@ -88,3 +88,4 @@ backend/firebase_acc_key.json
 
 firebaseConfig.ts
 
+android/gradle.properties
