@@ -1,0 +1,10 @@
+flask==2.2.5
+firebase-admin==6.0.1
+pandas
+numpy
+requests
+geopandas
+shapely
+pyproj
+fiona
+gunicorn
