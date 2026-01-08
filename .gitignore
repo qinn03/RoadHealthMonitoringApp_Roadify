@@ -83,6 +83,7 @@ yarn-error.*
 
 #firebase service account key
 backend/firebase_acc_key.json
+repeatabilityTest/firebase_acc_key.json
 
 /python/
 
