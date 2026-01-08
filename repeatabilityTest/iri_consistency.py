@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # ======================
 # CONFIG
 # ======================
-SERVICE_ACCOUNT_PATH = "python/firebase_acc_key.json"
+SERVICE_ACCOUNT_PATH = "repeatabilityTest/firebase_acc_key.json"
 STORAGE_BUCKET_NAME = "aiot-road-app.firebasestorage.app"
 STORAGE_TEST_PREFIX = "test/"   # folder containing all test geojsons
 
@@ -49,7 +49,7 @@ for blob in blobs:
     mean_iri = np.mean(iri_vals)
 
     traversal_means.append(mean_iri)
-    print(f"{blob.name}: mean IRI = {mean_iri:.3f} km/m")
+    print(f"{blob.name}: mean IRI = {mean_iri:.3f} m/km")
 
 if len(traversal_means) < 2:
     raise RuntimeError("Not enough valid traversals after filtering")
@@ -68,8 +68,8 @@ cv = std_of_means / mean_of_means
 # ======================
 print("\n=== IRI CONSISTENCY SUMMARY ===")
 print(f"Number of traversals     : {len(traversal_means)}")
-print(f"Mean IRI (km/m)          : {mean_of_means:.3f}")
-print(f"Std Deviation (km/m)     : {std_of_means:.3f}")
+print(f"Mean IRI (m/km)          : {mean_of_means:.3f}")
+print(f"Std Deviation (m/km)     : {std_of_means:.3f}")
 print(f"Coefficient of Var (%)   : {cv * 100:.2f}%")
 
 # ======================
@@ -78,7 +78,7 @@ print(f"Coefficient of Var (%)   : {cv * 100:.2f}%")
 plt.figure(figsize=(6, 4))
 plt.plot(range(1, len(traversal_means) + 1), traversal_means, marker="o")
 plt.xlabel("Traversal Number")
-plt.ylabel("Mean IRI (km/m)")
+plt.ylabel("Mean IRI (m/km)")
 plt.title("IRI Consistency Across Repeated Traversals")
 plt.grid(True)
 plt.tight_layout()
