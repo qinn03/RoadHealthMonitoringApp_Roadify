@@ -1,4 +1,3 @@
-import { auth, db } from "@/firebaseConfig";
 import { Ionicons } from "@expo/vector-icons";
 import * as turf from "@turf/turf";
 import * as Location from "expo-location";
@@ -31,6 +30,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { auth, db } from "../../firebaseConfig";
 
 /* ---------------- TYPES ---------------- */
 type ReportDoc = {

@@ -1,4 +1,3 @@
-import { auth, db, storage } from "@/firebaseConfig";
 import { Feather, Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 import {
@@ -35,6 +34,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { auth, db, storage } from "../../firebaseConfig";
 
 type UserDoc = {
   displayName?: string;

@@ -1,4 +1,3 @@
-import { db } from "@/firebaseConfig";
 import { Ionicons } from "@expo/vector-icons";
 import MapboxGL from "@rnmapbox/maps";
 import * as turf from "@turf/turf";
@@ -25,6 +24,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { db } from "../../firebaseConfig";
 
 /* ---------------- CONFIG / TOKENS ---------------- */
 const extra = Constants.expoConfig?.extra || {};

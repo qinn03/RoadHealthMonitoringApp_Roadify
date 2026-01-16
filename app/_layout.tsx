@@ -1,10 +1,10 @@
-import { SensorLoggerProvider } from "@/context/SensorLoggerContext";
-import { auth } from "@/firebaseConfig";
 import { Orbitron_400Regular, useFonts } from "@expo-google-fonts/orbitron";
 import { Stack, useRouter, useSegments } from "expo-router";
 import { onAuthStateChanged, User } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, View } from "react-native";
+import { SensorLoggerProvider } from "../context/SensorLoggerContext";
+import { auth } from "../firebaseConfig";
 import "./global.css";
 
 export default function RootLayout() {

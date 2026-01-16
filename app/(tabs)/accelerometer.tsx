@@ -1,4 +1,3 @@
-import { useSensorLogger } from "@/context/SensorLoggerContext";
 import { Ionicons } from "@expo/vector-icons";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
@@ -16,6 +15,7 @@ import {
   View,
 } from "react-native";
 import { LineChart } from "react-native-chart-kit";
+import { useSensorLogger } from "../../context/SensorLoggerContext";
 
 // Import the alert image
 const alertImage = require("../../assets/images/accelerometer_alert.jpg");

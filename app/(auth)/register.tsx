@@ -1,4 +1,3 @@
-import { auth, db } from "@/firebaseConfig";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -16,6 +15,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { auth, db } from "../../firebaseConfig";
 
 export default function RegisterScreen() {
   const router = useRouter();

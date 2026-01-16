@@ -87,6 +87,6 @@ repeatabilityTest/firebase_acc_key.json
 
 /python/
 
-firebaseConfig.ts
+/android
 
 android/gradle.properties

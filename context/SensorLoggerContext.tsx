@@ -1,6 +1,5 @@
 // logger for accelerometer sensor
 
-import { db } from "@/firebaseConfig";
 import * as Location from "expo-location";
 import { Accelerometer } from "expo-sensors";
 import { addDoc, collection, doc, setDoc } from "firebase/firestore";
@@ -11,6 +10,7 @@ import React, {
   useRef,
   useState,
 } from "react";
+import { db } from "../firebaseConfig";
 
 // data type
 export type LogEntry = {

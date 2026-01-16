@@ -1,4 +1,3 @@
-import { db, storage } from "@/firebaseConfig";
 import { Ionicons } from "@expo/vector-icons";
 import MapboxGL from "@rnmapbox/maps";
 import Constants from "expo-constants";
@@ -27,6 +26,7 @@ import {
   SafeAreaView,
   useSafeAreaInsets,
 } from "react-native-safe-area-context";
+import { db, storage } from "../firebaseConfig";
 
 // --- CONFIG ---
 const extra = Constants.expoConfig?.extra || {};
